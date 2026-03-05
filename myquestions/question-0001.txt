@@ -1,0 +1,26 @@
+El Problema:
+
+Trabajas analizando el inventario y las ventas de una tienda. Tienes un DataFrame de pandas que contiene las columnas 'categoria', 'precio' y 'cantidad_vendida'. El equipo de análisis quiere identificar qué categorías generan mayores ingresos, pero solo considerando ventas que superen una cantidad mínima para evitar ruido en los datos.
+
+Tu Misión:
+
+Escribe una función que realice los siguientes pasos:
+
+1. Filtrar el DataFrame eliminando las filas donde 'cantidad_vendida' sea menor que el umbral especificado.
+2. Crear una nueva columna llamada 'ingreso_total' calculada como precio * cantidad_vendida.
+3. Agrupar los datos por la columna 'categoria'.
+4. Calcular la suma total de 'ingreso_total' para cada categoría.
+5. Ordenar los resultados de mayor a menor ingreso.
+6. Devolver únicamente las n_top categorías con mayores ingresos.
+
+Nombre de la función:
+
+top_categorias_ingresos(df, umbral_cantidad, n_top=3)
+
+La función debe devolver:
+
+Una Serie de pandas donde:
+- el índice sea el nombre de la categoría
+- el valor sea el ingreso total de esa categoría
+
+Los resultados deben estar ordenados de mayor a menor ingreso.

@@ -1,0 +1,20 @@
+El Problema:
+
+Estás analizando datos meteorológicos provenientes de sensores que registran temperatura cada cierto tiempo. Los datos contienen una columna 'fecha_hora' en formato texto y una columna numérica 'temperatura'. Debido a variaciones rápidas en las mediciones, deseas suavizar la serie temporal para observar mejor la tendencia general.
+
+Tu Misión:
+
+Escribe una función que:
+
+1. Convierta la columna 'fecha_hora' a tipo datetime.
+2. Establezca 'fecha_hora' como índice del DataFrame.
+3. Calcule el promedio móvil (rolling mean) de la columna 'temperatura' utilizando el tamaño de ventana especificado.
+4. Elimine los valores NaN generados por el cálculo del promedio móvil.
+
+Nombre de la función:
+
+suavizar_temperaturas(df, ventana)
+
+La función debe devolver:
+
+Un DataFrame de pandas indexado por fecha y hora que contenga únicamente la columna 'temperatura' con los valores suavizados y sin valores NaN.

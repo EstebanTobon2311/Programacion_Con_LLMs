@@ -1,0 +1,22 @@
+El Problema:
+
+Dispones de un conjunto de datos con muchas características numéricas y deseas reducir su dimensionalidad antes de utilizarlos en un modelo de machine learning. Para ello decides aplicar Análisis de Componentes Principales (PCA) con el objetivo de conservar una proporción mínima de la varianza total de los datos.
+
+Tu Misión:
+
+Escribe una función que:
+
+1. Reciba una matriz de características X (numpy array o estructura convertible a array).
+2. Aplique PCA de scikit-learn configurado para conservar al menos el porcentaje de varianza explicado indicado.
+3. Transforme los datos originales utilizando el modelo PCA entrenado.
+
+Nombre de la función:
+
+pca_varianza_minima(X, varianza_objetivo=0.90)
+
+La función debe devolver:
+
+Una tupla con dos elementos:
+
+1. X_transformado: un array de numpy con los datos transformados en el nuevo espacio de componentes principales.
+2. n_componentes: un número entero que indique cuántos componentes principales fueron necesarios para alcanzar la varianza objetivo.

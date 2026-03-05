@@ -1,0 +1,19 @@
+El Problema:
+
+Un equipo de marketing desea segmentar a sus clientes en grupos similares utilizando aprendizaje no supervisado. Para ello quieren aplicar el algoritmo K-Means sobre un conjunto de características numéricas de los clientes y evaluar la calidad del agrupamiento obtenido.
+
+Tu Misión:
+
+Escribe una función que:
+
+1. Reciba una matriz de características X.
+2. Entrene un modelo KMeans de scikit-learn utilizando el número de clusters k especificado.
+3. Calcule el coeficiente de silueta (Silhouette Score) para evaluar la calidad del agrupamiento generado.
+
+Nombre de la función:
+
+evaluar_kmeans_silhouette(X, k)
+
+La función debe devolver:
+
+Un número flotante (float) correspondiente al valor del Silhouette Score obtenido para el agrupamiento generado por KMeans.
