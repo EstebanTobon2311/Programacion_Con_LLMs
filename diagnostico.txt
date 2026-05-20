@@ -1,6 +1,0 @@
-La solución correspondiente al ejercicio 0296 fue validada localmente y produce correctamente la salida esperada cuando se invoca con los argumentos generados por el caso de uso.
-
-El error reportado por el validador corresponde a un “usecase generator error” asociado a una invocación de detectar_convergencia() sin argumentos, lo cual no corresponde a la firma implementada en answer-0296.py. La función desarrollada requiere los parámetros especificados en el enunciado:
-df, target_col, fracciones, umbral, random_state.
-
-Además, el archivo answer-0296.py contiene únicamente los imports necesarios y la definición de la función, sin llamadas adicionales a ejecución.
